@@ -5,22 +5,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
+
+    <!-- icon cdn -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"
+    />
   </head>
   <body>
-    <header class="container flex items-center justify-between">
+    <header class="header container flex items-center justify-between">
       <h1>LOGO</h1>
       <nav class="menus">
-        <ul class="flex items-center space">
+        <ul class="flex items-center space-x-2 flex">
           <li><a href="#Product">Product</a></li>
           <li><a href="#Features">Features</a></li>
           <li><a href="#Marketplace">Marketplace</a></li>
           <li><a href="#Company">Company</a></li>
         </ul>
       </nav>
-      <div class="sign-in-action">
-        <button>Log in</button>
+      <div class="sign-in-action flex items-center">
+        <button class="sign-in-btn">Log in</button>
+        <i class="ph ph-arrow-right"></i>
       </div>
     </header>
-    <main></main>
+    <main>
+      <section class="hero-section relative">
+          <div class="absolute blue-color"></div>
+          <div class="absolute pink-color"></div>
+          <div class="absolute pink-color-2"></div>
+          <div class="inset-0 absolute blur-layer"></div>
+
+        <div class="tag-line flex items-center">
+          Announcing our next round of funding.
+          <div class="flex items-center">
+            <span>Read more</span>
+            <i class="ph ph-arrow-right"></i>
+          </div>
+        </div>
+        <div class="main-heading">
+          <h2>Data to enrich your online business</h2>
+        </div>
+        <div class="hero-description">
+          <p>
+            anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui
+            lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat
+            fugiat aliqua.
+          </p>
+        </div>
+        <div class="hero-buttons space-x-1 flex">
+          <button class="get-started">Get Started</button>
+
+          <div class="flex items-center">
+            <button class="learn-more">Learn more</button>
+            <i class="ph ph-arrow-right"></i>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>

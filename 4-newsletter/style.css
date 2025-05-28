@@ -1,1 +1,108 @@
-/* write your css here */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+/* utilites */
+
+.flex {
+  display: flex;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.newsletter {
+  margin: 20px;
+  position: relative;
+  padding: 20px;
+  height: 400px;
+  background-color: #101826;
+  display: flex;
+  align-items: center;
+  border-radius: 1rem;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+  z-index: 10;
+}
+
+.rounde-shadow {
+  position: absolute;
+  background-color: #432A56;
+  height: 300px;
+  width: 50%;
+  border-radius: 50%;
+  bottom: -45%;
+  /* bottom: 0px; */
+  left: 50%;
+  z-index: 5;
+  filter: blur(90px);
+  transform: translateX(-50%);
+}
+
+/* .newsletter * {
+  position: relative;
+  z-index: 1;
+} */
+
+.main-heading {
+  font-size: 3rem;
+  color: white;
+}
+
+.description {
+  color: white;
+  font-size: 1.2rem;
+  max-width: 35%;
+  width: 100%;
+  text-align: center;
+  margin: 10px auto;
+}
+
+.input-design {
+  border: 1px solid silver;
+  border-radius: 6px;
+  background-color: transparent;
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.195);
+  padding: 8px;
+  outline: none;
+  margin-top: 25px;
+  min-width: 350px;
+  color: white;
+}
+
+::placeholder {
+  color: silver;
+  opacity: 1;
+  /* Firefox */
+}
+
+.notify-btn {
+  margin-top: 25px;
+  margin-left: 10px;
+  border: none;
+  padding-left: 10px;
+  padding-right: 10px;
+  opacity: 1;
+  border-radius: 6px;
+  background-color: white;
+}
+
+.actual-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  z-index: 10;
+}
