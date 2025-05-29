@@ -3,6 +3,12 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+:root {
+  --primary-color: #4f39f6;
+  --secondary-color: #6a7282;
 }
 
 /* utilites */
@@ -116,16 +122,24 @@
 
 .menus ul li a {
   text-decoration: none;
-  color: black;
+  color: #101828;
+  font-weight: 600;
 }
 
 .sign-in-btn {
   background-color: transparent;
   border: none;
+  font-weight: bold;
+
 }
 
 .sign-in-action {
   gap: 5px;
+  font-weight: bold;
+}
+
+.sign-in-action i {
+  font-weight: bold;
 }
 
 .hero-section {
@@ -141,24 +155,24 @@
 }
 
 .tag-line {
-  border: 1px solid silver;
-  padding: 6px;
-  border-radius: 1rem;
-  color: rgb(96, 94, 94);
-  /* max-width: 25%;
-  width: 100%; */
+  border: 1px solid #10182837;
+  padding: 8px 10px;
+  font-size: 14px;
+  border-radius: 50rem;
+  color: var(--secondary-color);
 }
 
 .tag-line span,
 .tag-line i {
-  color: indigo;
-  font-weight: bold;
+  color: var(--primary-color);
+  font-weight: 600;
+  margin-left: 4px;
 }
 
 .main-heading {
   font-weight: bold;
-  font-size: 2.4rem;
-  max-width: 35%;
+  font-size: 50px;
+  max-width: 50%;
   width: 100%;
   text-align: center;
 }
@@ -168,42 +182,42 @@
 }
 
 .hero-description {
-  max-width: 40%;
-  color: rgb(96, 94, 94);
+  max-width: 46%;
+  color: var(--secondary-color);
   width: 100%;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   text-align: center;
 }
 
 .get-started {
-  background-color: indigo;
-  padding: 10px 16px;
+  background-color: var(--primary-color);
+  padding: 10px 14px;
   border: none;
+  font-size: 16px;
   border-radius: 6px;
   color: white;
   font-weight: 500;
-  letter-spacing: .6px;
-  word-spacing: 2px;
 }
 
 .learn-more {
   background-color: transparent;
   border: none;
-  font-weight: 500;
-  letter-spacing: .6px;
-  word-spacing: 2px;
+  font-weight: 600;
+  font-size: 16px;
   margin-right: 4px;
+}
+
+.learn-more-icon i {
+  font-weight: 600;
 }
 
 .blue-color {
   top: 0px;
   left: 20%;
-  /* left: 50%;
-  transform: translateX(-50%); */
   z-index: 9;
   height: 200px;
   width: 200px;
-  background-color: blue;
+  background-color: var(--primary-color);
   filter: blur(150px);
   border-radius: 50%;
 }
@@ -229,11 +243,5 @@
   filter: blur(60px);
 
 }
-
-/* .blur-layer {
-  backdrop-filter: blur(2px);
-  background-color: transparent;
-  z-index: 10;
-} */
 
 /* HERO SECTION CSS END */

@@ -5,6 +5,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+:root {
+  --secondary-color: #6a7282;
 }
 
 /* utilites */
@@ -64,8 +69,10 @@
 }
 
 .desc {
-  color: white;
-  font-size: 1.2rem;
+  /* color: var(--secondary-color); */
+  color: #868fa1;
+  font-size: 1.1rem;
+  line-height: 1.6;
   margin-bottom: 2.3rem;
 }
 

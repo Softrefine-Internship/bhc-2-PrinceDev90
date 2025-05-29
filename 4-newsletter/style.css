@@ -4,6 +4,13 @@
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
+  font-family: "Inter", sans-serif;
+}
+
+:root {
+  --primary-color: #4f39f6;
+  --secondary-color: #6a7282;
+  --dark-color: #101828;
 }
 
 /* utilites */
@@ -60,7 +67,7 @@
 }
 
 .description {
-  color: white;
+  color: #858c9b;
   font-size: 1.2rem;
   max-width: 35%;
   width: 100%;
@@ -73,8 +80,8 @@
   border-radius: 6px;
   background-color: transparent;
   backdrop-filter: blur(10px);
-  background-color: rgba(255, 255, 255, 0.195);
-  padding: 8px;
+  background-color: rgba(255, 255, 255, 0.064);
+  padding: 12px 10px;
   outline: none;
   margin-top: 25px;
   min-width: 350px;
@@ -91,10 +98,12 @@
   margin-top: 25px;
   margin-left: 10px;
   border: none;
+  font-weight: bold;
   padding-left: 10px;
   padding-right: 10px;
   opacity: 1;
   border-radius: 6px;
+  color: var(--dark-color);
   background-color: white;
 }
 
