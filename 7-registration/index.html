@@ -5,6 +5,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
+
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"
+    />
   </head>
-  <body></body>
+  <body>
+    <section class="login-section">
+      <img src="images/tailwind.svg" alt="tailwind svg" />
+
+      <h2>Sign in to your account</h2>
+
+      <div class="login-form">
+        <div class="email-field">
+          <label for="email">Email address</label>
+          <input type="email" name="" id="email" />
+        </div>
+
+        <div class="pass-field">
+          <label for="password">Password</label>
+          <input type="password" name="" id="password" />
+        </div>
+
+        <div class="remember-me">
+          <div class="remember">
+            <input
+              type="checkbox"
+              name=""
+              id="remember-me"
+              class="custom-checkbox"
+            />
+            <label for="remember-me">Remember me</label>
+          </div>
+          <div class="forgot">
+            <a href="#forgot-password">Forgot password?</a>
+          </div>
+        </div>
+
+        <button type="button" class="sign-in button">Sign in</button>
+
+        <div class="divider">
+          <p>Or continue with</p>
+          <hr />
+        </div>
+
+        <div class="direct-login">
+          <button class="twitter">
+            <i class="ph-fill ph-twitter-logo"></i>Twitter
+          </button>
+          <button class="github">
+            <i class="ph-fill ph-github-logo"></i>Github
+          </button>
+        </div>
+      </div>
+
+      <div class="offer">
+        <p>Not a member? <span>Start a 14 day free trial</span></p>
+      </div>
+    </section>
+  </body>
 </html>

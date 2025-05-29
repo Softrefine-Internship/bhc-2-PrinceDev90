@@ -3,11 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Contact form</title>
     <link rel="stylesheet" href="style.css" />
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <section class="contact-form container">
+      <div class="blue"></div>
+      <div class="red"></div>
       <div class="contact-heading">
         <h1>Contact sales</h1>
         <p>Aute magna irure deserunt veniam aliqua magna enim voluptate.</p>
@@ -35,15 +45,19 @@
         </div>
         <div class="message">
           <label for="message">Message</label>
-          <input type="text" id="message" />
+          <!-- <textarea name="" id=""></textarea> -->
+          <textarea name="" id="" cols="30" rows="5"></textarea>
+          <!-- <input type="text" id="message" /> -->
         </div>
-        <div class="accept-agrement">
-          <div class=""></div>
+        <div class="accept-agrement flex">
+          <div class="toggle">
+            <span></span>
+          </div>
           <p>
-            By selecting this, you agree to our <span>privacy policy.</span>
+            By selecting this, you agree to our <span class="pricy">privacy policy.</span>
           </p>
         </div>
-        <button class="btn">Let's talk</button>
+        <button type="button" class="btn">Let's talk</button>
       </div>
     </section>
   </body>
