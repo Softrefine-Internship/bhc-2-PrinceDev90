@@ -17,7 +17,7 @@
 /* utilites */
 
 .container {
-  max-width: 1280px;
+  max-width: 1480px;
   width: 100%;
   margin: 0px auto;
 }
@@ -35,7 +35,7 @@
 }
 
 .pricing-card-section {
-  padding: 20px 0;
+  padding: 40px 0;
 }
 
 .pricing-card-section .price-tag {
@@ -81,6 +81,7 @@
 .plan-type {
   font-weight: bold;
   font-size: 1.2rem;
+  color: var(--dark-color);
   margin-bottom: 1.2rem;
 }
 
@@ -126,7 +127,7 @@
   align-items: center;
   color: var(--secondary-color);
   gap: 10px;
-  margin-bottom: 8px;
+  margin-bottom: 12px;
 }
 
 .features-bullet li:last-child {
@@ -136,3 +137,6 @@
 .features-bullet li i {
   color: var(--primary-color);
 }
+
+
+/* #101826 */

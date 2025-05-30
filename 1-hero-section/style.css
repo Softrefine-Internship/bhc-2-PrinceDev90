@@ -14,7 +14,7 @@
 /* utilites */
 
 .container {
-  max-width: 1280px;
+  max-width: 1450px;
   width: 100%;
   margin: 0px auto;
 }
@@ -209,14 +209,15 @@
 
 .learn-more-icon i {
   font-weight: 600;
+  line-height: 1;
 }
 
 .blue-color {
   top: 0px;
-  left: 20%;
+  left: 30%;
   z-index: 9;
-  height: 200px;
-  width: 200px;
+  height: 150px;
+  width: 150px;
   background-color: var(--primary-color);
   filter: blur(150px);
   border-radius: 50%;
@@ -229,7 +230,7 @@
   height: 100px;
   width: 100px;
   background-color: rgb(220, 69, 94);
-  filter: blur(80px);
+  filter: blur(90px);
 
 }
 
@@ -237,10 +238,10 @@
   bottom: 0px;
   right: 0px;
   z-index: 9;
-  height: 200px;
-  width: 200px;
+  height: 150px;
+  width: 150px;
   background-color: pink;
-  filter: blur(60px);
+  filter: blur(80px);
 
 }
 
