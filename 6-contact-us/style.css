@@ -29,7 +29,7 @@
 
 .contact-form {
   height: 100%;
-  padding: 20px 0px;  
+  padding: 20px 0px;
   position: relative;
   display: flex;
   overflow: hidden;
@@ -38,7 +38,7 @@
 }
 
 .blue {
-  position: absolute;
+  position: fixed;
   top: 0px;
   left: 10%;
   z-index: -1;
@@ -50,7 +50,7 @@
 }
 
 .red {
-  position: absolute;
+  position: fixed;
   top: 0px;
   left: 0px;
   z-index: -1;
@@ -76,6 +76,7 @@
   color: var(--secondary-color);
   font-size: 1.1rem;
   margin-top: 10px;
+  margin-bottom: 55px;
 }
 
 .actual-form {
@@ -84,7 +85,7 @@
   width: 100%;
   margin: 0px auto;
   grid-template-columns: repeat(12, 1fr);
-  gap: 15px;
+  gap: 25px;
 }
 
 .fname {
@@ -131,6 +132,10 @@ textarea {
   flex-direction: column;
 }
 
+.phoneNumber #phoneNumber {
+  padding-left: 70px;
+}
+
 .message {
   grid-column: 1 / -1;
   width: 100%;
@@ -156,6 +161,15 @@ textarea {
   font-weight: bold;
 }
 
+.toggle-wrapper {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.toggle-input {
+  display: none;
+}
+
 .toggle {
   background-color: #6a728258;
   width: 40px;
@@ -163,19 +177,28 @@ textarea {
   position: relative;
   border-radius: 50rem;
   padding: 3px;
+  transition: background-color 0.3s ease;
 }
 
 .toggle span {
   position: absolute;
   background-color: white;
   width: 20px;
-
   height: 20px;
   top: 50%;
   transform: translateY(-50%);
   border-radius: 50%;
-  bottom: 0px;
+  transition: transform 0.3s ease;
+}
 
+/* Toggle ON */
+.toggle-input:checked+.toggle {
+  background-color: #4ade80;
+}
+
+.toggle-input:checked+.toggle span {
+  transform: translate(15px, -50%);
+  /* moves the circle to the right */
 }
 
 
@@ -197,4 +220,17 @@ textarea {
 label {
   font-size: 14px;
   font-weight: 600;
+}
+
+.phoneContainer {
+  position: relative;
+}
+
+.input-element {
+  position: absolute;
+  top: 40px;
+  outline: none;
+  left: 10px;
+  border: none;
+  background-color: transparent;
 }

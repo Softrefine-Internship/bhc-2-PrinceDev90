@@ -39,9 +39,16 @@
           <label for="email">Email</label>
           <input type="text" id="email" />
         </div>
-        <div class="phoneNumber">
+        <div class="phoneNumber phoneContainer">
+          <!-- <div class="phoneContainer"> -->
           <label for="phoneNumber">Phone number</label>
-          <input type="text" id="phoneNumber" />
+          <input type="number" id="phoneNumber" />
+          <select name="" class="input-element" id="">
+            <option value="+91">+91</option>
+            <option value="+101">+101</option>
+            <option value="+36">+36</option>
+          </select>
+          <!-- </div> -->
         </div>
         <div class="message">
           <label for="message">Message</label>
@@ -50,11 +57,16 @@
           <!-- <input type="text" id="message" /> -->
         </div>
         <div class="accept-agrement flex">
-          <div class="toggle">
-            <span></span>
-          </div>
+          <label class="toggle-wrapper">
+            <input type="checkbox" class="toggle-input" />
+            <div class="toggle">
+              <span></span>
+            </div>
+          </label>
+
           <p>
-            By selecting this, you agree to our <span class="pricy">privacy policy.</span>
+            By selecting this, you agree to our
+            <span class="pricy">privacy policy.</span>
           </p>
         </div>
         <button type="button" class="btn">Let's talk</button>
