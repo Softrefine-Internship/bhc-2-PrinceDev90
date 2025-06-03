@@ -1,15 +1,48 @@
-/* write your css here */
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
+
+* {
+  margin: 0px;
+  padding: 0px;
   box-sizing: border-box;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  font-variation-settings: normal;
+}
+
+.text-gray-900 {
+  color: var(--color-gray-900);
+}
+
+.text-gray-500 {
+  color: var(--color-gray-500);
+}
+
+.text-gray-600 {
+  color: var(--color-gray-600);
+}
+
+.text-white {
+  color: var(--color-white);
+}
+
+.bg-indigo-600 {
+  background-color: var(--color-indigo-600);
+}
+
+.font-medium {
+  --tw-font-weight: var(--font-weight-medium);
+  font-weight: var(--font-weight-medium);
+}
+
+:root {
+  
+  --default-font-feature-settings: var(--font-sans--font-feature-settings);
+  --default-mono-font-family: var(--font-mono);
+  --font-sans--font-feature-settings: "cv02", "cv03", "cv04", "cv11";
 }
 
 :root {
   --secondary-color: #6a7282;
+  --secondary--color: oklch(87.2% .01 258.338);
 }
 
 /* utilites */
@@ -27,13 +60,6 @@
   position: relative;
   box-sizing: border-box;
   height: 100%;
-}
-
-.wrapper {
-  position: absolute;
-  inset: 0;
-  background-color: #1b2ead;
-  opacity: 0.8;
 }
 
 .part-1 img {
@@ -57,7 +83,7 @@
 .part-2 .tag-line {
   color: #7989ED;
   margin-bottom: 1rem;
-
+  font-weight: 600;
 }
 
 .head {
@@ -70,7 +96,7 @@
 
 .desc {
   /* color: var(--secondary-color); */
-  color: #acafb4;
+  color: var(--secondary--color);
   font-size: 1.1rem;
   line-height: 1.6;
   margin-bottom: 2.3rem;

@@ -2,15 +2,25 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  text-decoration: none;
-  list-style: none;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Inter', sans-serif;
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  font-variation-settings: normal;
 }
 
-:root {
-  --primary-color: #4f39f6;
-  --secondary-color: #6a7282;
-  --dark-color: #101828;
+.date-color {
+  color: oklch(55.1% .027 264.364);
+}
+
+.blog-desc-color {
+  color: oklch(44.6% .03 256.802);
+}
+
+.tag-color {
+  color: oklch(44.6% .03 256.802);
+}
+
+.tag-bg {
+  background-color: oklch(98.5% .002 247.839);
 }
 
 /* utilites */
@@ -41,7 +51,6 @@
 }
 
 .section-heading p {
-  color: var(--secondary-color);
   font-size: 1.1rem;
   margin-bottom: 4rem;
 }
@@ -78,7 +87,6 @@
 
 
 .date {
-  color: var(--secondary-color);
   margin-right: 20px;
   font-size: 12px;
 }
@@ -89,12 +97,14 @@ hr {
   background-color: #6a72823f;
 }
 
+.blog-head-color {
+  color: oklch(21% .034 264.665);
+}
+
 .tag {
-  background-color: #6a728219;
-  padding: 5px 7px;
+  padding: 7px 10px;
   border-radius: 50rem;
   font-size: 12px;
-  color: #101828cd;
   font-weight: 600;
 }
 
@@ -123,20 +133,16 @@ hr {
 
 .user-name {
   margin-bottom: 2px;
-  font-weight: bold;
-}
-
-.blog-heading {
-  color: var(--dark-color);
+  font-size: 15px;
+  font-weight: 600 !important;
 }
 
 .blog-descri {
-  color: var(--secondary-color);
-  font-size: 16px;
+  font-size: 15px;
   line-height: 1.6;
 }
 
 .user-post {
-  color: var(--secondary-color);
-  font-size: 12px;
+  font-size: 14px;
+  margin-top: 5px;
 }

@@ -3,9 +3,14 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  font-variation-settings: normal;
   text-decoration: none;
-  list-style: none;
-  font-family: "Lato", sans-serif;
+}
+
+.text-gray-600 {
+  color: #4a5565;
 }
 
 :root {
@@ -30,13 +35,14 @@
 
 
 .tbl-head {
-  font-size: 20px;
+  font-size: 1rem;
   font-weight: 600;
   margin-bottom: 10px;
 }
 
 .tbl-extra-info {
-  color: var(--dark-color);
+  color: oklch(37.3% .034 259.733);
+  font-size: 14px;
 }
 
 .primary-add-btn {
@@ -56,17 +62,23 @@ table {
 table tr th {
   text-align: start;
   padding-bottom: 15px;
-  font-weight: bolder;
+  font-weight: 500;
   border-bottom: 1px solid #6b72806d;
 }
 
 table tr td {
-  padding-block: 14px;
+  padding-block: 16px;
   border-bottom: 1px solid #6b72806d;
+  color: #6a7282;
+}
+
+table tr td:last-child {
+  text-align: right;
 }
 
 table tr td:first-child {
-  font-weight: 600;
+  font-weight: 500;
+  color: #111827;
 }
 
 .edit-btn {
